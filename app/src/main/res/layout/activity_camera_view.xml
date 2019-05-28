@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CameraViewActivity">
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/jcv_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SurfaceView
+        android:id="@+id/sf_surface1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#2196F3"
+        />
+
+    <SurfaceView
+        android:id="@+id/sf_surface2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00000000"
+       />
+
+    <ImageView
+        android:id="@+id/iv_exit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/todo"
+        android:padding="13dp"
+        android:src="@drawable/exit_icon"
+       android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bt_take_photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/bg_take_photo_icon"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

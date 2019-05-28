@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OfflineOrOnlineOCR</string>
+    <string name="todo">TODO</string>
+    <string name="textView_shibiejieguo">识别结果</string>
+</resources>
